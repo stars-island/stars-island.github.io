@@ -574,7 +574,7 @@ window.addEventListener('pjax:success', () => {
 NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
   NexT.utils.getScript('//cdn.jsdelivr.net/npm/disqusjs@1/dist/disqus.js', () => {
     window.dsqjs = new DisqusJS({
-      api       : 'https://disqus.skk.moe/disqus/' || 'https://disqus.com/api/',
+      api       : '' || 'https://disqus.com/api/',
       apikey    : 'fk20HjXdk8apz8QiFxWTjUgLzud5PXVwT92DWREjG4EXKhhJhyB69ZidfxHZ4DdB',
       shortname : 'STARS-ISLAND',
       url       : "https://stars-island.github.io/404.html",
