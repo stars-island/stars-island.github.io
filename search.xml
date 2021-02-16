@@ -19,13 +19,12 @@
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 <img data-src="<%- qrcode(url) %>">
 <!-- white margin, default 0 -->
-<p><img data-src="<%- qrcode(url, {
+<img data-src="<%- qrcode(url, {
     margin: 2
-}) %>"></p>
+}) %>">
 <!-- size of one module in pixels, default 6 -->
-<p><img data-src="<%- qrcode(url, {
+<img data-src="<%- qrcode(url, {
     size: 4
-}) %>"></p>
-]]></content>
+}) %>">]]></content>
   </entry>
 </search>
