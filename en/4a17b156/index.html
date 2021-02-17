@@ -413,8 +413,8 @@
       <div class="tabs tabs-comment">
         <ul class="nav-tabs">
             <li class="tab"><a href="#comment-disqusjs">disqusjs</a></li>
-            <li class="tab"><a href="#comment-livere">livere</a></li>
             <li class="tab"><a href="#comment-utterances">utterances</a></li>
+            <li class="tab"><a href="#comment-livere">livere</a></li>
         </ul>
         <div class="tab-content">
             <div class="tab-pane disqusjs" id="comment-disqusjs">
@@ -424,11 +424,11 @@
   </div>
   
             </div>
-            <div class="tab-pane livere" id="comment-livere">
-              <div class="comments" id="lv-container" data-id="city" data-uid="MTAyMC81MDM2MC8yNjg1MA=="></div>
-            </div>
             <div class="tab-pane utterances" id="comment-utterances">
               <div class="comments utterances-container"></div>
+            </div>
+            <div class="tab-pane livere" id="comment-livere">
+              <div class="comments" id="lv-container" data-id="city" data-uid="MTAyMC81MDM2MC8yNjg1MA=="></div>
             </div>
         </div>
       </div>
@@ -572,6 +572,19 @@ NexT.utils.loadComments('#disqus_thread', () => {
 </script>
 
 <script>
+NexT.utils.loadComments('.utterances-container', () => {
+  const script = document.createElement('script');
+  script.src = 'https://utteranc.es/client.js';
+  script.setAttribute('repo', "stars-island/stars-island.github.io");
+  script.setAttribute('issue-term', "pathname");
+  script.setAttribute('theme', "preferred-color-scheme");
+  script.crossOrigin = 'anonymous';
+  script.async = true;
+  document.querySelector('.utterances-container').appendChild(script);
+});
+</script>
+
+<script>
 NexT.utils.loadComments('#lv-container', () => {
   window.livereOptions = {
     refer: "en/4a17b156/"
@@ -584,19 +597,6 @@ NexT.utils.loadComments('#lv-container', () => {
     j.async = true;
     e.parentNode.insertBefore(j, e);
   })(document, 'script');
-});
-</script>
-
-<script>
-NexT.utils.loadComments('.utterances-container', () => {
-  const script = document.createElement('script');
-  script.src = 'https://utteranc.es/client.js';
-  script.setAttribute('repo', "stars-island/stars-island.github.io");
-  script.setAttribute('issue-term', "pathname");
-  script.setAttribute('theme', "preferred-color-scheme");
-  script.crossOrigin = 'anonymous';
-  script.async = true;
-  document.querySelector('.utterances-container').appendChild(script);
 });
 </script>
 
