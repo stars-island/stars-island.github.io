@@ -92,7 +92,7 @@
 <link rel="alternate" href="/atom.xml" title="Stars Island" type="application/atom+xml">
 <link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
 <script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script>
-</head>
+<script src="/assets/js/DPlayer.min.js"></script></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
   <div class="headband"></div>
@@ -303,7 +303,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2021-02-17 20:50:26 / Modified: 20:58:41" itemprop="dateCreated datePublished" datetime="2021-02-17T20:50:26+08:00">2021-02-17</time>
+      <time title="Created: 2021-02-17 20:50:26 / Modified: 21:08:05" itemprop="dateCreated datePublished" datetime="2021-02-17T20:50:26+08:00">2021-02-17</time>
     </span>
 
   
@@ -314,7 +314,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">Symbols count in article: </span>
-      <span>3.5k</span>
+      <span>3.2k</span>
     </span>
     <span class="post-meta-item" title="Reading time">
       <span class="post-meta-item-icon">
@@ -333,54 +333,7 @@
     
     <div class="post-body" itemprop="articleBody">
           <p>This is an example of video player tests.</p>
-
-<div id="dplayer" classname="dplayer"></div>
-<link class="dplayer-css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.css">
-<script src="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.js"></script>
-<script>
-  var dp = new DPlayer({
-    container: document.querySelector('#dplayer'),
-    autoplay: false,
-    theme: '#FADFA3',
-    loop: true,
-    screenshot: true,
-    hotkey: true,
-    logo: 'logo.png',
-    volume: 0.7,
-    mutex: true,
-    video: {
-      url: 'trailer.mp4',
-      pic: '',
-      thumbnails: 'thumbnails.jpg',
-      type: 'auto'
-    },
-    subtitle: {
-      url: 'webvtt.vtt',
-      type: 'webvtt',
-      fontSize: '25px',
-      bottom: '10%',
-      color: '#b7daff'
-    },
-    danmaku: {
-      id: 'demo',
-      api: 'https://api.prprpr.me/dplayer/',
-      token: 'demo',
-      maximum: 3000,
-      user: 'DIYgod',
-      margin: {
-        bottom: '15%'
-      },
-      unlimited: true
-    },
-    contextmenu: [
-      {
-        text: 'custom contextmenu',
-        link: 'https://github.com/MoePlayer/DPlayer'
-      }
-    ]
-  });
-</script>
-
+<div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"loop":true,"screenshot":true,"hotkey":true,"preload":"true","video":{"url":"/undefined/5cfa907f/trailer.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
 <figure class="highlight js"><figcaption><span>Example_I-Don't-Know-the-Actual-Language</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">dplayer options:</span><br><span class="line">    <span class="string">&#x27;autoplay&#x27;</span>, <span class="string">&#x27;loop&#x27;</span>, <span class="string">&#x27;screenshot&#x27;</span>, <span class="string">&#x27;hotkey&#x27;</span>, <span class="string">&#x27;mutex&#x27;</span>, <span class="string">&#x27;dmunlimited&#x27;</span> : bool options, use <span class="string">&quot;yes&quot;</span> <span class="string">&quot;y&quot;</span> <span class="string">&quot;true&quot;</span> <span class="string">&quot;1&quot;</span> <span class="string">&quot;on&quot;</span> or just without value to enable</span><br><span class="line">    <span class="string">&#x27;preload&#x27;</span>, <span class="string">&#x27;theme&#x27;</span>, <span class="string">&#x27;lang&#x27;</span>, <span class="string">&#x27;logo&#x27;</span>, <span class="string">&#x27;url&#x27;</span>, <span class="string">&#x27;pic&#x27;</span>, <span class="string">&#x27;thumbnails&#x27;</span>, <span class="string">&#x27;vidtype&#x27;</span>, <span class="string">&#x27;suburl&#x27;</span>, <span class="string">&#x27;subtype&#x27;</span>, <span class="string">&#x27;subbottom&#x27;</span>, <span class="string">&#x27;subcolor&#x27;</span>, <span class="string">&#x27;subcolor&#x27;</span>, <span class="string">&#x27;id&#x27;</span>, <span class="string">&#x27;api&#x27;</span>, <span class="string">&#x27;token&#x27;</span>, <span class="string">&#x27;addition&#x27;</span>, <span class="string">&#x27;dmuser&#x27;</span> : string <span class="built_in">arguments</span></span><br><span class="line">    <span class="string">&#x27;volume&#x27;</span>, <span class="string">&#x27;maximum&#x27;</span> : number <span class="built_in">arguments</span></span><br><span class="line">container options:</span><br><span class="line">    <span class="string">&#x27;width&#x27;</span>, <span class="string">&#x27;height&#x27;</span> : string, used <span class="keyword">in</span> container element style</span><br><span class="line">other:</span><br><span class="line">    <span class="string">&#x27;code&#x27;</span> : value <span class="keyword">of</span> <span class="built_in">this</span> key will be append to script tag</span><br></pre></td></tr></table></figure>
 <figure class="highlight js"><figcaption><span>Example_I-Don't-Know-the-Actual-Language</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;% dplayer <span class="string">&quot;url=https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.mp4&quot;</span> <span class="string">&quot;addition=https://dplayer.daoapp.io/bilibili?aid=4157142&quot;</span> <span class="string">&quot;api=https://api.prprpr.me/dplayer/&quot;</span> <span class="string">&quot;pic=https://moeplayer.b0.upaiyun.com/dplayer/hikarunara.jpg&quot;</span> <span class="string">&quot;id=9E2E3368B56CDBB4&quot;</span> <span class="string">&quot;loop=yes&quot;</span> <span class="string">&quot;theme=#FADFA3&quot;</span> <span class="string">&quot;autoplay=false&quot;</span> <span class="string">&quot;token=tokendemo&quot;</span> %&#125;</span><br><span class="line">&#123;% dplayer <span class="string">&#x27;url=some.mp4&#x27;</span> <span class="string">&quot;id=someid&quot;</span> <span class="string">&quot;api=https://api.prprpr.me/dplayer/&quot;</span> <span class="string">&quot;addition=/some.json&quot;</span> <span class="string">&#x27;code=player.on(&quot;loadstart&quot;,function()&#123;console.log(&quot;loadstart&quot;)&#125;)&#x27;</span> <span class="string">&quot;autoplay&quot;</span> %&#125; </span><br></pre></td></tr></table></figure>
 <figure class="highlight js"><figcaption><span>Raw-Dplayer_Example_I-Don't-Know-the-Actual-Language</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">&lt;div id=<span class="string">&quot;dplayer&quot;</span> className=<span class="string">&quot;dplayer&quot;</span>&gt;&lt;/div&gt;</span><br><span class="line">&lt;link <span class="class"><span class="keyword">class</span></span>=<span class="string">&quot;dplayer-css&quot;</span> rel=<span class="string">&quot;stylesheet&quot;</span> href=<span class="string">&quot;https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.css&quot;</span>&gt;</span><br><span class="line">&lt;script src=<span class="string">&quot;https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.js&quot;</span>&gt;&lt;/script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">  <span class="keyword">var</span> dp = <span class="keyword">new</span> DPlayer(&#123;</span><br><span class="line">    container: <span class="built_in">document</span>.querySelector(<span class="string">&#x27;#dplayer&#x27;</span>),</span><br><span class="line">    autoplay: <span class="literal">false</span>,</span><br><span class="line">    theme: <span class="string">&#x27;#FADFA3&#x27;</span>,</span><br><span class="line">    loop: <span class="literal">true</span>,</span><br><span class="line">    screenshot: <span class="literal">true</span>,</span><br><span class="line">    hotkey: <span class="literal">true</span>,</span><br><span class="line">    logo: <span class="string">&#x27;logo.png&#x27;</span>,</span><br><span class="line">    volume: <span class="number">0.7</span>,</span><br><span class="line">    mutex: <span class="literal">true</span>,</span><br><span class="line">    video: &#123;</span><br><span class="line">      url: <span class="string">&#x27;demo.mp4&#x27;</span>,</span><br><span class="line">      pic: <span class="string">&#x27;demo.png&#x27;</span>,</span><br><span class="line">      thumbnails: <span class="string">&#x27;thumbnails.jpg&#x27;</span>,</span><br><span class="line">      type: <span class="string">&#x27;auto&#x27;</span></span><br><span class="line">    &#125;,</span><br><span class="line">    subtitle: &#123;</span><br><span class="line">      url: <span class="string">&#x27;webvtt.vtt&#x27;</span>,</span><br><span class="line">      type: <span class="string">&#x27;webvtt&#x27;</span>,</span><br><span class="line">      fontSize: <span class="string">&#x27;25px&#x27;</span>,</span><br><span class="line">      bottom: <span class="string">&#x27;10%&#x27;</span>,</span><br><span class="line">      color: <span class="string">&#x27;#b7daff&#x27;</span></span><br><span class="line">    &#125;,</span><br><span class="line">    danmaku: &#123;</span><br><span class="line">      id: <span class="string">&#x27;demo&#x27;</span>,</span><br><span class="line">      api: <span class="string">&#x27;https://api.prprpr.me/dplayer/&#x27;</span>,</span><br><span class="line">      token: <span class="string">&#x27;demo&#x27;</span>,</span><br><span class="line">      maximum: <span class="number">3000</span>,</span><br><span class="line">      user: <span class="string">&#x27;DIYgod&#x27;</span>,</span><br><span class="line">      margin: &#123;</span><br><span class="line">        bottom: <span class="string">&#x27;15%&#x27;</span></span><br><span class="line">      &#125;,</span><br><span class="line">      unlimited: <span class="literal">true</span></span><br><span class="line">    &#125;,</span><br><span class="line">    contextmenu: [</span><br><span class="line">      &#123;</span><br><span class="line">        text: <span class="string">&#x27;custom contextmenu&#x27;</span>,</span><br><span class="line">        link: <span class="string">&#x27;https://github.com/MoePlayer/DPlayer&#x27;</span></span><br><span class="line">      &#125;</span><br><span class="line">    ]</span><br><span class="line">  &#125;);</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
@@ -468,12 +421,12 @@
           <p>This is an example of music player tests.</p>
 <figure class="highlight javascript"><figcaption><span>Example_Display_I-Don't-Know-the-Actual-Language</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;% aplayer title author url [picture_url, narrow, autoplay, <span class="attr">width</span>:xxx, <span class="attr">lrc</span>:xxx] %&#125;</span><br><span class="line">&#123;% aplayer <span class="string">&quot;Caffeine&quot;</span> <span class="string">&quot;Jeff Williams&quot;</span> <span class="string">&quot;caffeine.mp3&quot;</span> <span class="string">&quot;autoplay&quot;</span> <span class="string">&quot;width:70%&quot;</span> <span class="string">&quot;lrc:caffeine.txt&quot;</span> %&#125;</span><br></pre></td></tr></table></figure>
 
-        <div id="aplayer-iGwNiMfC" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+        <div id="aplayer-ipDlSQIC" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-iGwNiMfC"),
+            element: document.getElementById("aplayer-ipDlSQIC"),
             narrow: false,
             autoplay: true,
             showlrc: false,
@@ -579,18 +532,13 @@
     
     <div class="post-body" itemprop="articleBody">
           <p>Welcome to <a target="_blank" rel="external nofollow noopener noreferrer" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="external nofollow noopener noreferrer" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="external nofollow noopener noreferrer" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start">Quick Start</h2>
-<h3 id="Create-a-new-post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 <p>More info: <a target="_blank" rel="external nofollow noopener noreferrer" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 <p>More info: <a target="_blank" rel="external nofollow noopener noreferrer" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 <p>More info: <a target="_blank" rel="external nofollow noopener noreferrer" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 <p>More info: <a target="_blank" rel="external nofollow noopener noreferrer" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 
       
@@ -661,7 +609,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">6 mins.</span>
+    <span title="Reading time total">5 mins.</span>
   </span>
 </div>
 <div class="busuanzi-count">
